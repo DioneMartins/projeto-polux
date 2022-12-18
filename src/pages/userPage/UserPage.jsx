@@ -8,6 +8,7 @@ export default function UserPage(){
     return(
         <div className={userWrapper}>
             <Header/>
+            <p>Página do usuário [COMING SOON]</p>
         </div>
     );
 }

@@ -8,6 +8,7 @@ export default function EditPlace(){
     return(
         <div className={editPlaceWrapper}>
             <Header/>
+            <p>Edição de lugar [COMING SOON]</p>
         </div>
     );
 }

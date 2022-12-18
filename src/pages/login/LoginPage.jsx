@@ -8,6 +8,7 @@ export default function LoginPage(){
     return(
         <div className={loginWrapper}>
             <Header/>
+            <p>Página de login [COMING SOON]</p>
         </div>
     );
 }

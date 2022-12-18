@@ -8,6 +8,7 @@ export default function EditCharacter(){
     return(
         <div className={editCharWrapper}>
             <Header/>
+            <p>Edição de personagem [COMING SOON]</p>
         </div>
     );
 }

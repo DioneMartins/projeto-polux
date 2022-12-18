@@ -8,6 +8,7 @@ export default function EditItem(){
     return(
         <div className={editItemWrapper}>
             <Header/>
+            <p>Edição de item [COMING SOON]</p>
         </div>
     );
 }

@@ -8,6 +8,7 @@ export default function DashboardPage(){
     return(
         <div className={dashboardWrapper}>
             <Header/>
+            <p>Dashboard [COMING SOON]</p>
         </div>
     );
 }

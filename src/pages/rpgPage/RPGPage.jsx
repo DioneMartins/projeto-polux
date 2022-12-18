@@ -8,6 +8,7 @@ export default function RPGPage(){
     return(
         <div className={rpgWrapper}>
             <Header/>
+            <p>Mesa de RPG [COMING SOON]</p>
         </div>
     );
 }

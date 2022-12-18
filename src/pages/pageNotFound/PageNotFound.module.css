@@ -3,3 +3,9 @@
     color: var(--aquaGreen);
     font-size: 60px;
 }
+
+.notFoundTextMini{
+    margin-top: 20px;
+    color: var(--lightAquaGreen);
+    font-size: 20px;
+}

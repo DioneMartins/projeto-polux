@@ -1,0 +1,20 @@
+.headerWrapper{
+    background-color: var(--darkestGreen);
+    height: 14vh;
+    padding: 1vh 0vh 1vh 5vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.headerIcon{
+    height: 12vh;
+    margin-right: 2vw;
+}
+
+.headerTitle{
+    color: var(--aquaGreen);
+    font-size: 46px;
+    margin: 0;
+    padding: 0;
+}

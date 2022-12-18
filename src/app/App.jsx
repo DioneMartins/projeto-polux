@@ -1,13 +1,15 @@
 import style from './App.module.css';
+import Router from "../router/Router";
+import { BrowserRouter } from 'react-router-dom';
 
-const { mainDiv, mainHeader } = style;
+const { mainDiv } = style;
 
 function App() {
   return (
     <div className={mainDiv}>
-      <header className={mainHeader}>
-        <p>Teste</p>
-      </header>
+      <BrowserRouter>
+        <Router/>
+      </BrowserRouter>
     </div>
   );
 }

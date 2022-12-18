@@ -11,3 +11,11 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+:root {
+  /* Variaveis de CSS */
+  --aquaGreen: #6CC3B0;
+  --darkGreen: #0E1F1B;
+  --darkestGreen: #041614;
+  --backgroundColor: #001000;
+}

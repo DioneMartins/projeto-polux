@@ -11,5 +11,6 @@ Iniciado dia 18/12/2022
 Finalizado dia 18/12/2022
 
 ### v0.2
-Criando esqueleto do site
+Esqueleto do site finalizado.
 Iniciado dia 18/12/2022
+Finalizado dia 18/12/2022

@@ -7,9 +7,9 @@ Finalizado dia 27/10/2022
 
 ### v0.1
 Diagramas criados. Banco de dados criado. Sistema de login criado.
-Iniciado dia 01/11/2022
-Finalizado dia 01/11/2022
+Iniciado dia 18/12/2022
+Finalizado dia 18/12/2022
 
 ### v0.2
-Figma criado.
-Iniciado dia 01/11/2022
+Criando esqueleto do site
+Iniciado dia 18/12/2022

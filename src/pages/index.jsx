@@ -5,3 +5,4 @@ export { default as UserPage } from './userPage/UserPage';
 export { default as EditCharacter } from './editCharacter/EditCharacter';
 export { default as EditItem } from './editItem/EditItem';
 export { default as EditPlace } from './editPlace/EditPlace';
+export { default as PageNotFound } from './pageNotFound/PageNotFound';

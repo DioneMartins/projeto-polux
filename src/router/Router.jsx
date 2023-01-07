@@ -1,19 +1,28 @@
-import React from "react";
-import { Route, Routes } from 'react-router-dom';
+import React, { useEffect, useState } from "react";
+import { Route, Routes, Navigate } from 'react-router-dom';
 import { Dashboard, EditCharacter, EditItem, EditPlace, LoginPage, PageNotFound, RPGPage, UserPage } from "../pages";
 
 export default function Router(){
-    let user=false;
+    const [user, setUser] = useState(false);
+
+    useEffect(() => {
+        const retrieve = JSON.parse(localStorage.getItem('user'));
+        if (retrieve) {
+            setUser(retrieve);
+        }
+        console.log(user);
+    }, []);
+
     return (
         <Routes>
-            <Route exact path="/" element={user ? <Dashboard/> : <LoginPage/>}/>
-            <Route path="/dashboard" element={<Dashboard/>}/>
-            <Route path="/login" element={<LoginPage/>}/>
-            <Route path="/rpg/:rpg" element={<RPGPage/>}/>
-            <Route path="/user/:username" element={<UserPage/>}/>
-            <Route path="/rpg/:rpg/edit/character/:char" element={<EditCharacter/>}/>
-            <Route path="/rpg/:rpg/edit/item/:item" element={<EditItem/>}/>
-            <Route path="/rpg/:rpg/edit/place/:place" element={<EditPlace/>}/>
+            <Route exact path="/" element={user ? <Navigate to="/dashboard"/> : <Navigate to="/login"/>}/>
+            <Route path="/dashboard" element={user ? <Dashboard/> : <Navigate to="/login"/>}/>
+            <Route path="/login" element={user ? <Navigate to="/dashboard"/> : <LoginPage/>}/>
+            <Route path="/rpg/:rpg" element={user ? <RPGPage/> : <Navigate to="/login"/>}/>
+            <Route path="/user/:username" element={user ? <UserPage/> : <Navigate to="/login"/>}/>
+            <Route path="/rpg/:rpg/edit/character/:char" element={user ? <EditCharacter/> : <Navigate to="/login"/>}/>
+            <Route path="/rpg/:rpg/edit/item/:item" element={user ? <EditItem/> : <Navigate to="/login"/>}/>
+            <Route path="/rpg/:rpg/edit/place/:place" element={user ? <EditPlace/> : <Navigate to="/login"/>}/>
             <Route path="*" element={<PageNotFound/>}/>
         </Routes>
     );

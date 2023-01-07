@@ -45,7 +45,7 @@ export function logIn(email, password, keepLogin){
     signInWithEmailAndPassword(auth, email, password)
     .then((userInfo) => {
         const user = userInfo.user;
-        console.log(user);
+        if(keepLogin) localStorage.setItem('user', JSON.stringify(user));
     })
     .catch((error) => {
         const eCode = error.code;
@@ -57,6 +57,7 @@ export function logIn(email, password, keepLogin){
 export function logOut(){
   const auth = getAuth();
   signOut(auth);
+  localStorage.removeItem('user');
 }
 
 export function checkUser(){
